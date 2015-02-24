@@ -20,11 +20,11 @@ _.ngettext('bar', 'bars');
 ## How to use
 
 ```
-$ jspot --help                      
+$ jspot --help
 
 Usage: jspot <command>
 
-command     
+command
   extract     Extract source from javascript files into pot files
   json        Convert po files to Jed-compatible json files (using po2json)
 
@@ -38,6 +38,8 @@ Options:
    -t DIR, --target DIR      Directory to write pot files to.  [.]
    -k WORD, --keyword WORD   Keyword to search for in source  [gettext]
    --header NAME:VALUE       Set a header for the written pot files
+   -e ENDING:MODULE, --extractor ENDING:MODULE Add custom extractor. Where ENDING is a file ending
+                             to match and MODULE is the extractor name that will be required.
 
 Extract source from javascript files into pot files
 ```
